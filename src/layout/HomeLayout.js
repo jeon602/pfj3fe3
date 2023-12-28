@@ -38,7 +38,7 @@ export function HomeLayout() {
               Company: 뮤레코드 대표:전희연
             </Text>
             <Text mb={2}>E-mail: muerecords@gmail.com</Text>
-            <Text mb={2}>Address</Text>
+            <Text mb={2}>Add</Text>
             <Text mb={2}>Bank info</Text>
           </Box>
         </Box>
