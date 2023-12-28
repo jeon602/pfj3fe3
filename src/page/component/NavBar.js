@@ -335,7 +335,7 @@ export function NavBar(props) {
             placement="left"
             isOpen={isOpen}
             onClose={onClose}
-            size={"sm"}
+            size="sm"
           >
             {/*펼쳐지고*/}
             <DrawerOverlay />
@@ -360,7 +360,7 @@ export function NavBar(props) {
                   <FontAwesomeIcon
                     icon={faMusic}
                     style={{ color: "#000000" }}
-                  />
+                  />{" "}
                   MUSIC IS MY LIFE{" "}
                   <FontAwesomeIcon
                     icon={faMusic}

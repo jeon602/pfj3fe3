@@ -20,7 +20,7 @@ export function HomeLayout() {
           borderRadius="xl"
           w={"90%"}
           h={"100%"}
-          backgroundColor={"white"}
+          backgroundColor="white"
         >
           <Outlet />
         </Box>
