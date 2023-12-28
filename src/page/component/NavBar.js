@@ -224,7 +224,7 @@ export function NavBar(props) {
           variant="ghost"
           w="100%"
           h="auto"
-          fontFamily="Constantia"
+          fontFamily="seogoe print"
           fontSize="80px"
           fontWeight="bold"
           _hover={{ cursor: "pointer" }}
@@ -232,7 +232,7 @@ export function NavBar(props) {
             navigate("/");
           }}
         >
-          MUE_RECORDS SHOP
+          JEJE's RECORDS SHOP
         </Text>
         <Box
           margin="8"
@@ -250,9 +250,7 @@ export function NavBar(props) {
           <Button
             variant="ghost"
             size="lg"
-            fontFamily="Constantia"
-            border="0px solid red"
-            _hover={{ bg: "none" }}
+            fontFamily="seogoe print"
             onClick={() => navigate("/", { state: { param: "CD" } })}
             leftIcon={<FontAwesomeIcon icon={faMusic} />}
           >
@@ -261,9 +259,9 @@ export function NavBar(props) {
           <Button
             variant="ghost"
             size="lg"
-            fontFamily="Constantia"
+            fontFamily="seogoe print"
             border="0px solid red"
-            _hover={{ bg: "none" }}
+            // _hover={{ bg: "none" }}
             onClick={() => navigate("/", { state: { param: "VINYL" } })}
             leftIcon={<FontAwesomeIcon icon={faMusic} />}
           >
@@ -272,9 +270,9 @@ export function NavBar(props) {
           <Button
             variant="ghost"
             size="lg"
-            fontFamily="Constantia"
-            border="0px solid red"
-            _hover={{ bg: "none" }}
+            fontFamily="seogoe print"
+            // border="0px solid red"
+            // _hover={{ bg: "none" }}
             onClick={() => navigate("/", { state: { param: "CASSETTE_TAPE" } })}
             leftIcon={<FontAwesomeIcon icon={faMusic} />}
           >
@@ -283,10 +281,9 @@ export function NavBar(props) {
           <Box>
             {loggedIn || (
               <Button
-                borderRadius={0}
                 variant="ghost"
                 size="lg"
-                fontFamily="Constantia"
+                fontFamily="seogoe print"
                 border="0px solid red"
                 leftIcon={<FontAwesomeIcon icon={faUserPlus} />}
                 onClick={() => navigate("/signup")}
@@ -298,9 +295,9 @@ export function NavBar(props) {
               <Button
                 variant="ghost"
                 size="lg"
-                fontFamily="Constantia"
-                border="0px solid red"
-                _hover={{ bg: "none" }}
+                fontFamily="seogoe print"
+                // border="0px solid red"
+                // _hover={{ bg: "none" }}
                 onClick={() => navigate("/login")}
                 leftIcon={<FontAwesomeIcon icon={faRightToBracket} />}
               >
