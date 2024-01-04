@@ -181,6 +181,8 @@ export function BoardView() {
                 <Heading size="m">앨범 가격 : {board.price}</Heading>
                 <Heading size="s">발매일자 : {board.releaseDate}</Heading>
               </Box>
+              <Button colorScheme="blue.100">Cart</Button>
+              <Button colorScheme="blue.100">Wish</Button>
 
               {/*관리자 권한 편집 기능*/}
               {isAdmin && (
@@ -225,6 +227,7 @@ export function BoardView() {
           </Center>
         </Box>
       </>
+
       <CommentComponent
         boardId={id}
         loggedIn={loggedIn}
