@@ -36,23 +36,22 @@ function LikeContainer({ loggedIn, setLoggedIn, boardId, sendRefreshToken }) {
   const toast = useToast();
   const [like, setLike] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(`/api/like/board/${boardId}`, {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
-      .then((response) => setLike(response.data))
-      .catch((error) => {
-        if (error.response.status === 401) {
-          setLoggedIn(false);
-          sendRefreshToken();
-        } else {
-          console.error("Error fetching like data: ", error);
-        }
-      });
-  }, [boardId, loggedIn]);
+  axios
+    .get(`/api/like/board/${boardId}`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+      },
+    })
+    .then((response) => setLike(response.data))
+    .catch((error) => {
+      if (error.response.status === 401) {
+        setLoggedIn(false);
+        sendRefreshToken();
+      } else {
+        console.error("Error fetching like data: ", error);
+      }
+    });
+  useEffect(() => {}, [boardId, loggedIn]);
 
   if (like === null) {
     return <center Spinner />;
@@ -125,7 +124,6 @@ function LikeContainer({ loggedIn, setLoggedIn, boardId, sendRefreshToken }) {
     </Flex>
   );
 }
-
 export function BoardList() {
   const [boardList, setBoardList] = useState([]);
   const navigate = useNavigate();

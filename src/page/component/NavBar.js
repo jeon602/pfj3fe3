@@ -40,6 +40,7 @@ import {
 import axios from "axios";
 import { Search } from "../board/Search";
 import { startSocialLoginTimer } from "./authUtils";
+
 // import axiosInstance from "../../axiosInstance";
 
 export function NavBar(props) {
@@ -60,6 +61,7 @@ export function NavBar(props) {
   const onCloseDrawer = () => {
     setTitleIconOpen(false);
   };
+
   function sendRefreshToken() {
     const refreshToken = localStorage.getItem("refreshToken");
     console.log("리프레시 토큰: ", refreshToken);
@@ -85,6 +87,7 @@ export function NavBar(props) {
         setLoggedIn(false);
       });
   }
+
   useEffect(() => {
     if (localStorage.getItem("accessToken") !== null) {
       console.log(localStorage.getItem("accessToken"));
@@ -214,6 +217,7 @@ export function NavBar(props) {
         navigate("/");
       });
   }
+
   return (
     <>
       <Flex flexDirection="column" mb={2}>
@@ -227,7 +231,7 @@ export function NavBar(props) {
           fontFamily="seogoe print"
           fontSize="80px"
           fontWeight="bold"
-          _hover={{ cursor: "pointer" }}
+          _hover={{ textDecoration: "underline" }}
           onClick={() => {
             navigate("/");
           }}
@@ -360,13 +364,9 @@ export function NavBar(props) {
                   <FontAwesomeIcon
                     icon={faMusic}
                     style={{ color: "#000000" }}
-                  />{" "}
-                  MUSIC IS MY LIFE{" "}
-                  <FontAwesomeIcon
-                    icon={faMusic}
-                    style={{ color: "#000000" }}
                   />
                 </Button>
+                MUSIC IS MY LIFE
                 <CloseButton
                   size="md"
                   border="0px solid blue"
