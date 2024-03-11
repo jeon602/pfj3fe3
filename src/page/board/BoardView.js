@@ -151,7 +151,7 @@ export function BoardView() {
     <>
       <>
         <Divider />
-        <Box margin="40">
+        <Box border="1px solid" bg="floralwhite" margin="40">
           <Center>
             <Stack
               direction={["column", "row"]}
