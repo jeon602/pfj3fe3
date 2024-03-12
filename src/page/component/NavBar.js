@@ -244,13 +244,14 @@ export function NavBar(props) {
           style={{
             marginTop: "60px",
             display: "flex",
-            border: "0px solid navy",
+            border: "1px solid navy",
             width: "100%",
             height: "auto",
             justifyContent: "space-evenly",
             alignItems: "center", // Align items vertically in the center
           }}
         >
+          <Search mt="12px"/>
           <Button
             variant="ghost"
             size="lg"

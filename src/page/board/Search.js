@@ -58,7 +58,7 @@ export const Search = ({ onSearch }) => {
     <>
       <Box as="form" onSubmit={handleSubmit}>
         <Center>
-          <Button type="button" onClick={toggleSearchOptions} mb={4}>
+          <Button type="button" onClick={toggleSearchOptions} >
             <FontAwesomeIcon icon={faSearch} />
             {showSearchOptions}
           </Button>
