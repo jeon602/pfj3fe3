@@ -240,14 +240,15 @@ export function NavBar(props) {
         </Text>
         <Box
           margin="8"
-          border="1px solid black"
+          border="0px solid black"
           style={{
+            // colorScheme:"blue",
             marginTop: "60px",
             display: "flex",
-            border: "1px solid navy",
-            width: "100%",
-            height: "auto",
-            justifyContent: "space-evenly",
+            border: "0px solid navy",
+            width: "90%",
+            height: "30px",
+            justifyContent: "space-around",
             alignItems: "center", // Align items vertically in the center
           }}
         >
